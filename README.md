@@ -42,9 +42,9 @@ pnpm patch react-dom@18.3.1
 # Assuming it is /path/to/temp
 WORKSPACE_DIR=/path/to/temp
 # PowerShell: $WORKSPACE_DIR = "/path/to/temp"
-curl -LfO --output-dir "$WORKSPACE_DIR" https://github.com/tats-u/react-dom-no-nul/raw/850327cbc752bf95e94114699861d142741f4181/cjs/react-dom-server.node.development.js
-curl -LfO --output-dir "$WORKSPACE_DIR" https://github.com/tats-u/react-dom-no-nul/raw/850327cbc752bf95e94114699861d142741f4181/cjs/react-dom-server.node.production.min.js
-pnpm patch commit "$WORKSPACE_DIR"
+curl -LfO --output-dir "$WORKSPACE_DIR/cjs" https://github.com/tats-u/react-dom-no-nul/raw/850327cbc752bf95e94114699861d142741f4181/cjs/react-dom-server.node.development.js
+curl -LfO --output-dir "$WORKSPACE_DIR/cjs" https://github.com/tats-u/react-dom-no-nul/raw/850327cbc752bf95e94114699861d142741f4181/cjs/react-dom-server.node.production.min.js
+pnpm patch-commit "$WORKSPACE_DIR"
 ```
 
 Commit the generated `patches/react-dom@18.3.1.patch` file and the modified `package.json` to your repository.
