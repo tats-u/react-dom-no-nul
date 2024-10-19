@@ -25,8 +25,8 @@ Use [`patch-package` package](https://github.com/ds300/patch-package).
 After `patch-package` (and additional `postinstall-postinstall` only for Yarn) is installed and `"postinstall": "patch-package"` is added to your `package.json`, run the following command.
 
 ```sh
-curl -LfO --output-dir node_modules/react-dom/cjs/react-dom-server.node.development.js https://github.com/tats-u/react-dom-no-nul/raw/850327cbc752bf95e94114699861d142741f4181/cjs/react-dom-server.node.development.js
-curl -LfO --output-dir node_modules/react-dom/cjs/react-dom-server.node.production.min.js https://github.com/tats-u/react-dom-no-nul/raw/850327cbc752bf95e94114699861d142741f4181/cjs/react-dom-server.node.production.min.js
+curl -LfO --output-dir node_modules/react-dom/cjs https://github.com/tats-u/react-dom-no-nul/raw/850327cbc752bf95e94114699861d142741f4181/cjs/react-dom-server.node.development.js
+curl -LfO --output-dir node_modules/react-dom/cjs https://github.com/tats-u/react-dom-no-nul/raw/850327cbc752bf95e94114699861d142741f4181/cjs/react-dom-server.node.production.min.js
 npx patch-package react-dom
 ```
 
