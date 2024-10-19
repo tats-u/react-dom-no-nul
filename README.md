@@ -57,7 +57,7 @@ See [the Yarn documentation](https://yarnpkg.com/features/patching) for details.
 
 ### Install
 
-`850327cbc752bf95e94114699861d142741f4181` is the commit ID of [the latest commit of branch `package-18.3.1`](https://github.com/tats-u/react-dom-no-nul/tree/package-18.3.1) and [the tag `patched-package-18.3.1`](https://github.com/tats-u/react-dom-no-nul/tree/patched-package-18.3.1). In case this repository were tampered by a cracker who had hijacked my account, please use the commit ID instead of the branch or the tag name.
+`850327cbc752bf95e94114699861d142741f4181` is the commit ID of the latest commit of [branch `package-18.3.1`](https://github.com/tats-u/react-dom-no-nul/tree/package-18.3.1) and [the tag `patched-package-18.3.1`](https://github.com/tats-u/react-dom-no-nul/tree/patched-package-18.3.1). In case this repository were tampered by a cracker who had hijacked my account, please use the commit ID instead of the branch or the tag name.
 
 ```json
 {
