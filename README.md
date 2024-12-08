@@ -47,7 +47,24 @@ curl -LfO --output-dir "$WORKSPACE_DIR/cjs" https://github.com/tats-u/react-dom-
 pnpm patch-commit "$WORKSPACE_DIR"
 ```
 
+The following part will be added to `package.json` by `pnpm patch-commit`:
+
+
+```diff
+     "@your/last-dependency": "version"
+-  }
++  },
++  "pnpm": {
++    "patchedDependencies": {
++      "react-dom@18.3.1": "patches/react-dom@18.3.1.patch"
++    }
++  }
+ }
+```
+
 Commit the generated `patches/react-dom@18.3.1.patch` file and the modified `package.json` to your repository.
+
+The generated `patches/react-dom@18.3.1.patch` will be the same as that in this repository. You can copy it to your repository and apply the above change to `package.json` instead of running `pnpm patch`.
 
 #### Yarn v2+
 
