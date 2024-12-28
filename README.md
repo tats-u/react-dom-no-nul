@@ -93,7 +93,7 @@ Then, run `npm i` or `yarn` to install the package.
 
 You can use this package **until you upgrade React to 19.x** if you're using React 18.x. That patch has been applied to React 19.x or newer. If you are going to upgrade React to 19.x or newer, you should replace this package with an official newer version by rewriting `dependencies` in `package.json`, or removing the patch created by `patch-package`, Yarn, or pnpm.
 
-You do *not* need to use this package at all **if you're using Next.js** because it uses newer unstable versions of React.
+You do *not* need to use this package at all **if you're using Next.js** (Pages Router in 14.x or App Router) because it uses newer unstable versions of React.
 
 You do *not* need to use this package at all if you don't use either of Node.js or npm packages. This bug can appear only when you use frameworks depending on the Node.js stream (and its polyfills in other JavaScript engines).
 
